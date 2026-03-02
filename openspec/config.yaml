@@ -1,0 +1,98 @@
+schema: spec-driven
+#流程：proposal -> specs -> design -> tasks
+
+# 项目上下文，AI 会参考这些信息生成 artifact
+context: |
+  Project: DeerFlow 2.0（开源 super agent harness）
+  Tech stack:
+    - Backend: Python 3.12, LangGraph, LangChain, FastAPI, Pydantic, uv
+    - Frontend: Next.js 16, React 19, TypeScript, Tailwind, pnpm
+    - Infra/Runtime: Nginx 反向代理, Docker/AIO Sandbox（可选）, Local Sandbox（默认）
+    - Tooling: ruff, pytest, eslint, tsc
+  Domain: 面向通用复杂任务的智能体编排系统（skills、subagents、memory、sandbox）
+  Modules:
+    - backend/src/agents: lead agent、middlewares、thread state
+    - backend/src/tools + community/*: 内置/社区工具（web、file、bash、image）
+    - backend/src/sandbox + community/aio_sandbox: 本地与容器沙箱提供者
+    - backend/src/gateway: models/mcp/memory/skills/uploads/artifacts API
+    - frontend/src/app + core + components: workspace 页面、状态与接口层
+    - skills/public + skills/custom: 技能库（按需加载）
+  Architecture & Entry:
+    - LangGraph 入口: backend/langgraph.json -> src.agents:make_lead_agent
+    - Gateway 入口: backend/src/gateway/app.py
+    - 前端 API 客户端: frontend/src/core/api/api-client.ts
+    - 统一入口端口: http://localhost:2026（nginx 分发前端/网关/langgraph）
+
+# AI 角色设定
+ai_roles:
+  role: 极其保守的资深全栈工程师（Python + TypeScript）
+  motto: "如果它没坏，就别修；如果已有轮子，就别造。"
+  reuse_libraries:
+    - 后端优先复用: agents/middlewares/tools/sandbox/gateway 现有模块
+    - 前端优先复用: core/* API 层、workspace 组件、ui 组件
+    - 优先沿用: 现有 config.yaml、extensions_config.json、skills 机制
+    - 执行前先扫描 `.codex/skills`（若存在再扫描 `.codex/cn/skills`），优先复用匹配 Skills，再考虑新增实现
+  strict_restrictions:
+    - 禁止破坏性或大范围文件操作 rm/del/rmdir/mv/cp 覆盖重要目录
+    - 修改依赖或核心配置文件需确认，避免无必要升级
+    - 禁止高危 Git 操作 git reset --hard/git rebase/git commit --amend
+    - 禁止系统级命令 sudo/chmod/chown/dd/mkfs
+  language: 中文交流，中文注释；后续所有流程说明、任务描述、执行反馈统一使用中文；命令、路径、Spec 关键字保留英文
+
+# per-artifact 规则
+rules:
+  proposal:
+    - 保持提案内容在 500 字以内
+    - 包含 Non-goals 和 Dependencies 小节
+    - 遵循三阶段流程：创建 → 实施 → 存档
+    - 增加“可复用 Skills”说明：列出已扫描技能与复用/不复用原因
+  specs:
+    - 每个 Requirement 必须可测试，使用 SHALL 或 MUST 描述
+    - 每个 Requirement 至少包含一个 Scenario，且使用 `#### Scenario:`
+    - 仅在行为变更时使用 MODIFIED；新增能力优先使用 ADDED
+  design:
+    - 明确架构影响范围、关键技术决策与备选方案
+    - 涉及部署发布时提供 Migration 和 Rollback 思路
+    - 标记关键风险并给出可执行缓解措施
+    - 记录 Skills 复用决策（复用哪些技能、为何不复用其余技能）
+  tasks:
+    - 首个任务必须为：扫描 `.codex/skills`（及 `.codex/cn/skills`）并形成复用清单
+    - 实施任务优先调用已存在 Skills，避免重复造轮子
+    - 拆分任务不超过 2 小时/块
+    - 任务按顺序完成并更新状态
+    - 涉及前后端联动时，明确接口与数据结构变更点
+    - Python 使用 4 空格，完整类型标注，优先 Pydantic 模型与 Guard-return
+    - TypeScript 类型优先，避免 any，组件和 hooks 复用既有模式
+    - 后端日志使用 logging；前端避免无意义 console 输出
+    - 使用 Guard-return 优先，减少嵌套
+    - 集合/判空前置校验；循环内多分支使用 continue
+    - 后端测试：pytest（必要时补充中间件/路由单测）
+    - 前端检查：eslint + tsc（必要时补充组件行为测试）
+    - 变更提交前至少执行受影响模块的 lint/typecheck/test
+    - 分支以当前仓库策略为准（默认开发分支 dev）
+    - "Commit: type: subject（feat/fix/docs/refactor/test/chore 等）"
+    - 避免一次提交混合不相关模块
+
+# 项目里程碑
+milestones:
+  - 里程碑1 - 明确变更范围（frontend/backend/skills/config）
+  - 里程碑2 - 设计方案与接口契约（含 LangGraph/Gateway 交互）
+  - 里程碑3 - 后端实现（agent/tools/gateway/sandbox）
+  - 里程碑4 - 前端实现（core API、workspace 组件联动）
+  - 里程碑5 - 联调验证（2026 入口、上传、artifact、流式响应）
+  - 里程碑6 - 测试与质量收敛（lint/typecheck/pytest）
+  - 里程碑7 - 文档更新与变更归档
+
+# 工作流
+workflow:
+  - "阶段0：技能扫描 - 每次执行前扫描 `.codex/skills`（若存在再扫描 `.codex/cn/skills`），优先复用匹配技能"
+  - "阶段1：创建变更 - 创建 proposal.md、tasks.md、design.md、spec deltas"
+  - "阶段2：实施变更 - 按 tasks.md 顺序完成实现并验证"
+  - "阶段3：归档变更 - 移动到 archive 并更新 spec"
+
+# Artifact 格式
+artifact_format:
+  proposal: proposal.md - Why / What Changes / Impact
+  tasks: tasks.md - Implementation checklist
+  design: design.md - 技术决策（可选）
+  spec: spec.md - Requirements/Scenarios (ADDED/MODIFIED/REMOVED/RENAMED)

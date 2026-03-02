@@ -1,0 +1,37 @@
+schema: spec-driven
+
+context: |
+  Project: DeerFlow 2.0
+  Tech stack:
+    - Backend: Python 3.12, LangGraph, FastAPI, Pydantic
+    - Frontend: Next.js, React, TypeScript
+    - Runtime: Nginx + Local/AIO Sandbox
+  Architecture:
+    - LangGraph entry: backend/langgraph.json -> src.agents:make_lead_agent
+    - Gateway entry: backend/src/gateway/app.py
+    - Frontend API client: frontend/src/core/api/api-client.ts
+
+ai_roles:
+  reuse_libraries:
+    - Scan `.codex/skills` (and `.codex/cn/skills` if present) before implementation and prioritize reuse.
+
+rules:
+  proposal:
+    - Keep proposal concise and include Non-goals and Dependencies.
+    - Include a reusable-skills section with reuse vs non-reuse rationale.
+  specs:
+    - Use SHALL/MUST language and include at least one `#### Scenario:` per requirement.
+  design:
+    - Record key decisions, trade-offs, and migration/rollback strategy when relevant.
+    - Capture skill reuse decisions and boundaries.
+  tasks:
+    - Add a first task to scan `.codex/skills` (and `.codex/cn/skills` if present) and build a reuse list.
+    - Prefer reusing existing skills before creating new implementations.
+    - Break work into small verifiable checklist items in dependency order.
+    - Run affected lint/typecheck/test before marking tasks complete.
+
+workflow:
+  - "Stage 0: Skill scan - review `.codex/skills` (and `.codex/cn/skills` if present), then prioritize reuse."
+  - "Stage 1: Creating Changes"
+  - "Stage 2: Implementing Changes"
+  - "Stage 3: Archiving Changes"
