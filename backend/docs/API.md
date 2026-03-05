@@ -101,6 +101,22 @@ Content-Type: application/json
 - `thinking_enabled` (boolean): Enable extended thinking for supported models
 - `is_plan_mode` (boolean): Enable TodoList middleware for task tracking
 
+**Debugging Stream Modes (for execution tracing):**
+- `values`: Full state after each step
+- `updates`: Node/task updates per step (recommended for step-by-step tracing)
+- `tasks`: Task start/end events with result/error
+- `custom`: Custom events from tools (`task_started`, `task_running`, `task_completed`, etc.)
+- `messages`: Token-level LLM stream
+- `debug`: Most verbose internal debug events
+
+Example (trace-oriented request):
+
+```json
+{
+  "stream_mode": ["tasks", "updates", "custom", "values"]
+}
+```
+
 **Response:** Server-Sent Events (SSE) stream
 
 ```

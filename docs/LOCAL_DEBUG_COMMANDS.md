@@ -21,6 +21,29 @@ uv run python debug.py 2>&1 | python3 ../scripts/tee_daily_log.py backend-debug 
 - 如 `uv` 不在 PATH，可改用 `~/.local/bin/uv run python debug.py`。
 - 如需改模型/plan mode，可直接编辑 `backend/debug.py` 中的 `config`。
 
+## 推荐：LangGraph 步骤级追踪（`backend/debug_trace.py`）
+
+用于定位“哪个节点执行了什么、每步返回了什么”，按 LangGraph `stream_mode` 打印执行事件。
+
+```bash
+mkdir -p logs/thread-traces
+cd backend
+uv run python debug_trace.py --thread-id debug-thread-001 --stream-modes tasks,updates,custom,values
+```
+
+常用参数：
+
+- `--once "你的问题"`：只跑一轮后退出（适合复现问题）
+- `--subgraphs`：显示子图命名空间事件
+- `--stream-modes tasks,updates,custom,values,messages,debug`：开启更详细事件（会更噪声）
+- `--thread-log-root /path/to/logs`：自定义 thread 日志目录
+- `--disable-thread-files`：关闭 thread 独立文件落盘
+
+默认会自动写入 thread 独立文件（不混入全局归档）：
+
+- 日志：`logs/thread-traces/langgraph_<thread_id>.log`
+- 图快照：`logs/thread-traces/langgraph_<thread_id>_graph.md`（含 Mermaid）
+
 ## 全链路联调（前端 + 网关 + LangGraph）
 
 如需验证 2026 入口、上传接口、前端页面联动，使用下面多终端命令。
@@ -60,6 +83,7 @@ uv run uvicorn src.gateway.app:app --host 0.0.0.0 --port 8001 --reload --log-lev
 ```bash
 mkdir -p logs/archive
 cd frontend
+pnpm install
 pnpm run dev 2>&1 | python3 ../scripts/tee_daily_log.py frontend --log-root ../logs
 ```
 

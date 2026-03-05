@@ -1,0 +1,4 @@
+interface:
+  display_name: "JFZ Code Path Plan Review"
+  short_description: "Review code path context and plan feasibility"
+  default_prompt: "Review this code path and evaluate whether my next plan is feasible."

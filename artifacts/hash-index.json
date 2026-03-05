@@ -1,0 +1,1322 @@
+{
+  "generated_at": "2026-03-02T08:21:11Z",
+  "version": "1.1.0",
+  "records": [
+    {
+      "hash": "004b67bb26c09ad5",
+      "canonical_id": "api:DELETE /api/threads/{id}/uploads/{filename}",
+      "name": "api-delete-thread-upload-file",
+      "type": "api",
+      "path": "DELETE /api/threads/{id}/uploads/{filename}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "270e242441b1a834",
+      "canonical_id": "api:GET /api/mcp/config",
+      "name": "api-get-mcp-config",
+      "type": "api",
+      "path": "GET /api/mcp/config",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2b5b425e006ef4fe",
+        "3adecdefb9444aed",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "281862bedb91c209",
+      "canonical_id": "api:GET /api/memory",
+      "name": "api-get-memory",
+      "type": "api",
+      "path": "GET /api/memory",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "c5daf628327d8abe",
+      "canonical_id": "api:GET /api/memory/status",
+      "name": "api-get-memory-status",
+      "type": "api",
+      "path": "GET /api/memory/status",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "940295218756d42f",
+      "canonical_id": "api:GET /api/models",
+      "name": "api-get-models",
+      "type": "api",
+      "path": "GET /api/models",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "97ed0223ace4b7a8",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "555cec3f1c4599c7",
+      "canonical_id": "api:GET /api/skills",
+      "name": "api-get-skills",
+      "type": "api",
+      "path": "GET /api/skills",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "81e9973d19c54346",
+      "canonical_id": "api:GET /api/threads/{id}/artifacts/{path}",
+      "name": "api-get-thread-artifact-path",
+      "type": "api",
+      "path": "GET /api/threads/{id}/artifacts/{path}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "8b64f8027f996b3b",
+      "canonical_id": "api:GET /api/threads/{id}/uploads/list",
+      "name": "api-get-thread-uploads-list",
+      "type": "api",
+      "path": "GET /api/threads/{id}/uploads/list",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "c7f595cf59e59a50",
+      "canonical_id": "api:POST /api/memory/reload",
+      "name": "api-post-memory-reload",
+      "type": "api",
+      "path": "POST /api/memory/reload",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "3a9e46986bbaf5c1",
+      "canonical_id": "api:POST /api/skills/install",
+      "name": "api-post-skills-install",
+      "type": "api",
+      "path": "POST /api/skills/install",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "fec2e606e0dc2fdb",
+      "canonical_id": "api:POST /api/threads/{id}/uploads",
+      "name": "api-post-thread-uploads",
+      "type": "api",
+      "path": "POST /api/threads/{id}/uploads",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "73d861c3d5bddf33",
+      "canonical_id": "api:PUT /api/mcp/config",
+      "name": "api-put-mcp-config",
+      "type": "api",
+      "path": "PUT /api/mcp/config",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2b5b425e006ef4fe",
+        "3adecdefb9444aed",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "f22ca4b6499f7386",
+      "canonical_id": "api:PUT /api/skills/{name}",
+      "name": "api-put-skills-name",
+      "type": "api",
+      "path": "PUT /api/skills/{name}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ],
+      "notes": "api endpoint"
+    },
+    {
+      "hash": "20cdcb391dd00901",
+      "canonical_id": "common:config-loader",
+      "name": "config-loader",
+      "type": "common",
+      "path": "backend/src/config",
+      "domain": "backend",
+      "parents": [
+        "98ceb006215e09fe"
+      ],
+      "children": [
+        "2b5b425e006ef4fe"
+      ],
+      "notes": "shared configuration loader"
+    },
+    {
+      "hash": "cd0f77195c2cf57f",
+      "canonical_id": "common:tool-registry",
+      "name": "tool-registry",
+      "type": "common",
+      "path": "backend/src/tools",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "79b4876d58940a6c"
+      ],
+      "notes": "tool registry and builtins"
+    },
+    {
+      "hash": "590e4e520343c8c7",
+      "canonical_id": "entrypoint:backend/langgraph.json",
+      "name": "langgraph-entry",
+      "type": "entrypoint",
+      "path": "backend/langgraph.json",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "d38bc66c683d3b7a"
+      ],
+      "notes": "runtime entrypoint"
+    },
+    {
+      "hash": "3596b7d831c7eac0",
+      "canonical_id": "entrypoint:backend/src/gateway/app.py",
+      "name": "gateway-entry",
+      "type": "entrypoint",
+      "path": "backend/src/gateway/app.py",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "98ceb006215e09fe"
+      ],
+      "notes": "runtime entrypoint"
+    },
+    {
+      "hash": "d23ae50788845411",
+      "canonical_id": "entrypoint:docker/docker-compose-dev.yaml",
+      "name": "docker-compose-dev-entry",
+      "type": "entrypoint",
+      "path": "docker/docker-compose-dev.yaml",
+      "domain": "infra",
+      "parents": [],
+      "children": [
+        "6ef339c43c3b32be",
+        "98ceb006215e09fe",
+        "b3f1ef2553afe509",
+        "b6817b8b43c0dced",
+        "d38bc66c683d3b7a"
+      ],
+      "notes": "runtime entrypoint"
+    },
+    {
+      "hash": "d533dfcdadc90669",
+      "canonical_id": "entrypoint:frontend/src/core/api/api-client.ts",
+      "name": "frontend-api-client-entry",
+      "type": "entrypoint",
+      "path": "frontend/src/core/api/api-client.ts",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "6ef339c43c3b32be"
+      ],
+      "notes": "runtime entrypoint"
+    },
+    {
+      "hash": "7ebfd43cccc67cf5",
+      "canonical_id": "module:backend/src/agents",
+      "name": "backend-agents",
+      "type": "module",
+      "path": "backend/src/agents",
+      "domain": "backend",
+      "parents": [
+        "1a7ef8e766f185a2",
+        "281862bedb91c209",
+        "c5daf628327d8abe",
+        "c7f595cf59e59a50",
+        "d38bc66c683d3b7a"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "257086f77783d424",
+      "canonical_id": "module:backend/src/community",
+      "name": "backend-community",
+      "type": "module",
+      "path": "backend/src/community",
+      "domain": "backend",
+      "parents": [
+        "b3f1ef2553afe509",
+        "d38bc66c683d3b7a"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "2b5b425e006ef4fe",
+      "canonical_id": "module:backend/src/config",
+      "name": "backend-config",
+      "type": "module",
+      "path": "backend/src/config",
+      "domain": "backend",
+      "parents": [
+        "20cdcb391dd00901",
+        "270e242441b1a834",
+        "73d861c3d5bddf33"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "72404a558745fd52",
+      "canonical_id": "module:backend/src/gateway",
+      "name": "backend-gateway",
+      "type": "module",
+      "path": "backend/src/gateway",
+      "domain": "backend",
+      "parents": [
+        "98ceb006215e09fe"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "3adecdefb9444aed",
+      "canonical_id": "module:backend/src/mcp",
+      "name": "backend-mcp",
+      "type": "module",
+      "path": "backend/src/mcp",
+      "domain": "backend",
+      "parents": [
+        "270e242441b1a834",
+        "73d861c3d5bddf33",
+        "98ceb006215e09fe"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "97ed0223ace4b7a8",
+      "canonical_id": "module:backend/src/models",
+      "name": "backend-models",
+      "type": "module",
+      "path": "backend/src/models",
+      "domain": "backend",
+      "parents": [
+        "940295218756d42f",
+        "98ceb006215e09fe"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "fe0f77b759d6f86d",
+      "canonical_id": "module:backend/src/reflection",
+      "name": "backend-reflection",
+      "type": "module",
+      "path": "backend/src/reflection",
+      "domain": "backend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "2fd7b9dce5128c2d",
+      "canonical_id": "module:backend/src/sandbox",
+      "name": "backend-sandbox",
+      "type": "module",
+      "path": "backend/src/sandbox",
+      "domain": "backend",
+      "parents": [
+        "004b67bb26c09ad5",
+        "81e9973d19c54346",
+        "8b64f8027f996b3b",
+        "d38bc66c683d3b7a",
+        "fec2e606e0dc2fdb"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "5894741b612dae26",
+      "canonical_id": "module:backend/src/skills",
+      "name": "backend-skills",
+      "type": "module",
+      "path": "backend/src/skills",
+      "domain": "backend",
+      "parents": [
+        "3a9e46986bbaf5c1",
+        "555cec3f1c4599c7",
+        "98ceb006215e09fe",
+        "f22ca4b6499f7386"
+      ],
+      "children": [
+        "58a82db38a1082b2",
+        "cbd9bddb2603703d"
+      ],
+      "notes": ""
+    },
+    {
+      "hash": "6ffb0e9886eebe40",
+      "canonical_id": "module:backend/src/subagents",
+      "name": "backend-subagents",
+      "type": "module",
+      "path": "backend/src/subagents",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a",
+        "d7049720d2531d96"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "79b4876d58940a6c",
+      "canonical_id": "module:backend/src/tools",
+      "name": "backend-tools",
+      "type": "module",
+      "path": "backend/src/tools",
+      "domain": "backend",
+      "parents": [
+        "cd0f77195c2cf57f",
+        "d38bc66c683d3b7a"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "391baf01877cf9fc",
+      "canonical_id": "module:backend/src/utils",
+      "name": "backend-utils",
+      "type": "module",
+      "path": "backend/src/utils",
+      "domain": "backend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "d15ae8d4a14922ba",
+      "canonical_id": "module:frontend/src/app",
+      "name": "frontend-app",
+      "type": "module",
+      "path": "frontend/src/app",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "cd78a768fe713c6f",
+      "canonical_id": "module:frontend/src/components",
+      "name": "frontend-components",
+      "type": "module",
+      "path": "frontend/src/components",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "34a717ac70d5ebc1",
+      "canonical_id": "module:frontend/src/core",
+      "name": "frontend-core",
+      "type": "module",
+      "path": "frontend/src/core",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "a3ba2ccc6f1e6ca7",
+      "canonical_id": "module:frontend/src/hooks",
+      "name": "frontend-hooks",
+      "type": "module",
+      "path": "frontend/src/hooks",
+      "domain": "frontend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "0df000c3024d2b0f",
+      "canonical_id": "module:frontend/src/lib",
+      "name": "frontend-lib",
+      "type": "module",
+      "path": "frontend/src/lib",
+      "domain": "frontend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "c5cf100b43ae8f7c",
+      "canonical_id": "module:frontend/src/server",
+      "name": "frontend-server",
+      "type": "module",
+      "path": "frontend/src/server",
+      "domain": "frontend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "af7f38242b7c0559",
+      "canonical_id": "module:frontend/src/styles",
+      "name": "frontend-styles",
+      "type": "module",
+      "path": "frontend/src/styles",
+      "domain": "frontend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "9d7cd6c6057a837d",
+      "canonical_id": "module:frontend/src/typings",
+      "name": "frontend-typings",
+      "type": "module",
+      "path": "frontend/src/typings",
+      "domain": "frontend",
+      "parents": [],
+      "children": [],
+      "notes": ""
+    },
+    {
+      "hash": "cbd9bddb2603703d",
+      "canonical_id": "module:skills/custom",
+      "name": "skills-custom",
+      "type": "module",
+      "path": "skills/custom",
+      "domain": "skills",
+      "parents": [
+        "5894741b612dae26"
+      ],
+      "children": [],
+      "notes": "skills root"
+    },
+    {
+      "hash": "58a82db38a1082b2",
+      "canonical_id": "module:skills/public",
+      "name": "skills-public",
+      "type": "module",
+      "path": "skills/public",
+      "domain": "skills",
+      "parents": [
+        "5894741b612dae26"
+      ],
+      "children": [],
+      "notes": "skills root"
+    },
+    {
+      "hash": "1a7ef8e766f185a2",
+      "canonical_id": "scheduler:memory-update-queue",
+      "name": "memory-update-queue",
+      "type": "scheduler",
+      "path": "backend/src/agents/memory/queue.py",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "7ebfd43cccc67cf5"
+      ],
+      "notes": "debounced memory updates"
+    },
+    {
+      "hash": "d7049720d2531d96",
+      "canonical_id": "scheduler:subagent-executor",
+      "name": "subagent-executor",
+      "type": "scheduler",
+      "path": "backend/src/subagents/executor.py",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "6ffb0e9886eebe40"
+      ],
+      "notes": "background task scheduling"
+    },
+    {
+      "hash": "6ef339c43c3b32be",
+      "canonical_id": "service:frontend",
+      "name": "frontend",
+      "type": "service",
+      "path": "frontend",
+      "domain": "frontend",
+      "parents": [
+        "b6817b8b43c0dced",
+        "d23ae50788845411",
+        "d533dfcdadc90669"
+      ],
+      "children": [
+        "34a717ac70d5ebc1",
+        "cd78a768fe713c6f",
+        "d15ae8d4a14922ba"
+      ],
+      "notes": "runtime service"
+    },
+    {
+      "hash": "98ceb006215e09fe",
+      "canonical_id": "service:gateway",
+      "name": "gateway",
+      "type": "service",
+      "path": "gateway",
+      "domain": "backend",
+      "parents": [
+        "004b67bb26c09ad5",
+        "270e242441b1a834",
+        "281862bedb91c209",
+        "3596b7d831c7eac0",
+        "3a9e46986bbaf5c1",
+        "555cec3f1c4599c7",
+        "73d861c3d5bddf33",
+        "81e9973d19c54346",
+        "8b64f8027f996b3b",
+        "940295218756d42f",
+        "b6817b8b43c0dced",
+        "c5daf628327d8abe",
+        "c7f595cf59e59a50",
+        "d23ae50788845411",
+        "d38bc66c683d3b7a",
+        "f22ca4b6499f7386",
+        "fec2e606e0dc2fdb"
+      ],
+      "children": [
+        "20cdcb391dd00901",
+        "3adecdefb9444aed",
+        "5894741b612dae26",
+        "72404a558745fd52",
+        "97ed0223ace4b7a8"
+      ],
+      "notes": "runtime service"
+    },
+    {
+      "hash": "d38bc66c683d3b7a",
+      "canonical_id": "service:langgraph",
+      "name": "langgraph",
+      "type": "service",
+      "path": "langgraph",
+      "domain": "backend",
+      "parents": [
+        "590e4e520343c8c7",
+        "b6817b8b43c0dced",
+        "d23ae50788845411"
+      ],
+      "children": [
+        "1a7ef8e766f185a2",
+        "257086f77783d424",
+        "2fd7b9dce5128c2d",
+        "6ffb0e9886eebe40",
+        "79b4876d58940a6c",
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe",
+        "cd0f77195c2cf57f",
+        "d7049720d2531d96"
+      ],
+      "notes": "runtime service"
+    },
+    {
+      "hash": "b6817b8b43c0dced",
+      "canonical_id": "service:nginx",
+      "name": "nginx",
+      "type": "service",
+      "path": "nginx",
+      "domain": "infra",
+      "parents": [
+        "d23ae50788845411"
+      ],
+      "children": [
+        "6ef339c43c3b32be",
+        "98ceb006215e09fe",
+        "d38bc66c683d3b7a"
+      ],
+      "notes": "runtime service"
+    },
+    {
+      "hash": "b3f1ef2553afe509",
+      "canonical_id": "service:provisioner",
+      "name": "provisioner",
+      "type": "service",
+      "path": "provisioner",
+      "domain": "infra",
+      "parents": [
+        "d23ae50788845411"
+      ],
+      "children": [
+        "257086f77783d424"
+      ],
+      "notes": "runtime service"
+    }
+  ],
+  "reverse_index": {
+    "004b67bb26c09ad5": {
+      "canonical_id": "api:DELETE /api/threads/{id}/uploads/{filename}",
+      "name": "api-delete-thread-upload-file",
+      "type": "api",
+      "path": "DELETE /api/threads/{id}/uploads/{filename}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ]
+    },
+    "270e242441b1a834": {
+      "canonical_id": "api:GET /api/mcp/config",
+      "name": "api-get-mcp-config",
+      "type": "api",
+      "path": "GET /api/mcp/config",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2b5b425e006ef4fe",
+        "3adecdefb9444aed",
+        "98ceb006215e09fe"
+      ]
+    },
+    "281862bedb91c209": {
+      "canonical_id": "api:GET /api/memory",
+      "name": "api-get-memory",
+      "type": "api",
+      "path": "GET /api/memory",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ]
+    },
+    "c5daf628327d8abe": {
+      "canonical_id": "api:GET /api/memory/status",
+      "name": "api-get-memory-status",
+      "type": "api",
+      "path": "GET /api/memory/status",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ]
+    },
+    "940295218756d42f": {
+      "canonical_id": "api:GET /api/models",
+      "name": "api-get-models",
+      "type": "api",
+      "path": "GET /api/models",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "97ed0223ace4b7a8",
+        "98ceb006215e09fe"
+      ]
+    },
+    "555cec3f1c4599c7": {
+      "canonical_id": "api:GET /api/skills",
+      "name": "api-get-skills",
+      "type": "api",
+      "path": "GET /api/skills",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ]
+    },
+    "81e9973d19c54346": {
+      "canonical_id": "api:GET /api/threads/{id}/artifacts/{path}",
+      "name": "api-get-thread-artifact-path",
+      "type": "api",
+      "path": "GET /api/threads/{id}/artifacts/{path}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ]
+    },
+    "8b64f8027f996b3b": {
+      "canonical_id": "api:GET /api/threads/{id}/uploads/list",
+      "name": "api-get-thread-uploads-list",
+      "type": "api",
+      "path": "GET /api/threads/{id}/uploads/list",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ]
+    },
+    "c7f595cf59e59a50": {
+      "canonical_id": "api:POST /api/memory/reload",
+      "name": "api-post-memory-reload",
+      "type": "api",
+      "path": "POST /api/memory/reload",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe"
+      ]
+    },
+    "3a9e46986bbaf5c1": {
+      "canonical_id": "api:POST /api/skills/install",
+      "name": "api-post-skills-install",
+      "type": "api",
+      "path": "POST /api/skills/install",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ]
+    },
+    "fec2e606e0dc2fdb": {
+      "canonical_id": "api:POST /api/threads/{id}/uploads",
+      "name": "api-post-thread-uploads",
+      "type": "api",
+      "path": "POST /api/threads/{id}/uploads",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2fd7b9dce5128c2d",
+        "98ceb006215e09fe"
+      ]
+    },
+    "73d861c3d5bddf33": {
+      "canonical_id": "api:PUT /api/mcp/config",
+      "name": "api-put-mcp-config",
+      "type": "api",
+      "path": "PUT /api/mcp/config",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "2b5b425e006ef4fe",
+        "3adecdefb9444aed",
+        "98ceb006215e09fe"
+      ]
+    },
+    "f22ca4b6499f7386": {
+      "canonical_id": "api:PUT /api/skills/{name}",
+      "name": "api-put-skills-name",
+      "type": "api",
+      "path": "PUT /api/skills/{name}",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "5894741b612dae26",
+        "98ceb006215e09fe"
+      ]
+    },
+    "20cdcb391dd00901": {
+      "canonical_id": "common:config-loader",
+      "name": "config-loader",
+      "type": "common",
+      "path": "backend/src/config",
+      "domain": "backend",
+      "parents": [
+        "98ceb006215e09fe"
+      ],
+      "children": [
+        "2b5b425e006ef4fe"
+      ]
+    },
+    "cd0f77195c2cf57f": {
+      "canonical_id": "common:tool-registry",
+      "name": "tool-registry",
+      "type": "common",
+      "path": "backend/src/tools",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "79b4876d58940a6c"
+      ]
+    },
+    "590e4e520343c8c7": {
+      "canonical_id": "entrypoint:backend/langgraph.json",
+      "name": "langgraph-entry",
+      "type": "entrypoint",
+      "path": "backend/langgraph.json",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "d38bc66c683d3b7a"
+      ]
+    },
+    "3596b7d831c7eac0": {
+      "canonical_id": "entrypoint:backend/src/gateway/app.py",
+      "name": "gateway-entry",
+      "type": "entrypoint",
+      "path": "backend/src/gateway/app.py",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "98ceb006215e09fe"
+      ]
+    },
+    "d23ae50788845411": {
+      "canonical_id": "entrypoint:docker/docker-compose-dev.yaml",
+      "name": "docker-compose-dev-entry",
+      "type": "entrypoint",
+      "path": "docker/docker-compose-dev.yaml",
+      "domain": "infra",
+      "parents": [],
+      "children": [
+        "6ef339c43c3b32be",
+        "98ceb006215e09fe",
+        "b3f1ef2553afe509",
+        "b6817b8b43c0dced",
+        "d38bc66c683d3b7a"
+      ]
+    },
+    "d533dfcdadc90669": {
+      "canonical_id": "entrypoint:frontend/src/core/api/api-client.ts",
+      "name": "frontend-api-client-entry",
+      "type": "entrypoint",
+      "path": "frontend/src/core/api/api-client.ts",
+      "domain": "runtime",
+      "parents": [],
+      "children": [
+        "6ef339c43c3b32be"
+      ]
+    },
+    "7ebfd43cccc67cf5": {
+      "canonical_id": "module:backend/src/agents",
+      "name": "backend-agents",
+      "type": "module",
+      "path": "backend/src/agents",
+      "domain": "backend",
+      "parents": [
+        "1a7ef8e766f185a2",
+        "281862bedb91c209",
+        "c5daf628327d8abe",
+        "c7f595cf59e59a50",
+        "d38bc66c683d3b7a"
+      ],
+      "children": []
+    },
+    "257086f77783d424": {
+      "canonical_id": "module:backend/src/community",
+      "name": "backend-community",
+      "type": "module",
+      "path": "backend/src/community",
+      "domain": "backend",
+      "parents": [
+        "b3f1ef2553afe509",
+        "d38bc66c683d3b7a"
+      ],
+      "children": []
+    },
+    "2b5b425e006ef4fe": {
+      "canonical_id": "module:backend/src/config",
+      "name": "backend-config",
+      "type": "module",
+      "path": "backend/src/config",
+      "domain": "backend",
+      "parents": [
+        "20cdcb391dd00901",
+        "270e242441b1a834",
+        "73d861c3d5bddf33"
+      ],
+      "children": []
+    },
+    "72404a558745fd52": {
+      "canonical_id": "module:backend/src/gateway",
+      "name": "backend-gateway",
+      "type": "module",
+      "path": "backend/src/gateway",
+      "domain": "backend",
+      "parents": [
+        "98ceb006215e09fe"
+      ],
+      "children": []
+    },
+    "3adecdefb9444aed": {
+      "canonical_id": "module:backend/src/mcp",
+      "name": "backend-mcp",
+      "type": "module",
+      "path": "backend/src/mcp",
+      "domain": "backend",
+      "parents": [
+        "270e242441b1a834",
+        "73d861c3d5bddf33",
+        "98ceb006215e09fe"
+      ],
+      "children": []
+    },
+    "97ed0223ace4b7a8": {
+      "canonical_id": "module:backend/src/models",
+      "name": "backend-models",
+      "type": "module",
+      "path": "backend/src/models",
+      "domain": "backend",
+      "parents": [
+        "940295218756d42f",
+        "98ceb006215e09fe"
+      ],
+      "children": []
+    },
+    "fe0f77b759d6f86d": {
+      "canonical_id": "module:backend/src/reflection",
+      "name": "backend-reflection",
+      "type": "module",
+      "path": "backend/src/reflection",
+      "domain": "backend",
+      "parents": [],
+      "children": []
+    },
+    "2fd7b9dce5128c2d": {
+      "canonical_id": "module:backend/src/sandbox",
+      "name": "backend-sandbox",
+      "type": "module",
+      "path": "backend/src/sandbox",
+      "domain": "backend",
+      "parents": [
+        "004b67bb26c09ad5",
+        "81e9973d19c54346",
+        "8b64f8027f996b3b",
+        "d38bc66c683d3b7a",
+        "fec2e606e0dc2fdb"
+      ],
+      "children": []
+    },
+    "5894741b612dae26": {
+      "canonical_id": "module:backend/src/skills",
+      "name": "backend-skills",
+      "type": "module",
+      "path": "backend/src/skills",
+      "domain": "backend",
+      "parents": [
+        "3a9e46986bbaf5c1",
+        "555cec3f1c4599c7",
+        "98ceb006215e09fe",
+        "f22ca4b6499f7386"
+      ],
+      "children": [
+        "58a82db38a1082b2",
+        "cbd9bddb2603703d"
+      ]
+    },
+    "6ffb0e9886eebe40": {
+      "canonical_id": "module:backend/src/subagents",
+      "name": "backend-subagents",
+      "type": "module",
+      "path": "backend/src/subagents",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a",
+        "d7049720d2531d96"
+      ],
+      "children": []
+    },
+    "79b4876d58940a6c": {
+      "canonical_id": "module:backend/src/tools",
+      "name": "backend-tools",
+      "type": "module",
+      "path": "backend/src/tools",
+      "domain": "backend",
+      "parents": [
+        "cd0f77195c2cf57f",
+        "d38bc66c683d3b7a"
+      ],
+      "children": []
+    },
+    "391baf01877cf9fc": {
+      "canonical_id": "module:backend/src/utils",
+      "name": "backend-utils",
+      "type": "module",
+      "path": "backend/src/utils",
+      "domain": "backend",
+      "parents": [],
+      "children": []
+    },
+    "d15ae8d4a14922ba": {
+      "canonical_id": "module:frontend/src/app",
+      "name": "frontend-app",
+      "type": "module",
+      "path": "frontend/src/app",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": []
+    },
+    "cd78a768fe713c6f": {
+      "canonical_id": "module:frontend/src/components",
+      "name": "frontend-components",
+      "type": "module",
+      "path": "frontend/src/components",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": []
+    },
+    "34a717ac70d5ebc1": {
+      "canonical_id": "module:frontend/src/core",
+      "name": "frontend-core",
+      "type": "module",
+      "path": "frontend/src/core",
+      "domain": "frontend",
+      "parents": [
+        "6ef339c43c3b32be"
+      ],
+      "children": []
+    },
+    "a3ba2ccc6f1e6ca7": {
+      "canonical_id": "module:frontend/src/hooks",
+      "name": "frontend-hooks",
+      "type": "module",
+      "path": "frontend/src/hooks",
+      "domain": "frontend",
+      "parents": [],
+      "children": []
+    },
+    "0df000c3024d2b0f": {
+      "canonical_id": "module:frontend/src/lib",
+      "name": "frontend-lib",
+      "type": "module",
+      "path": "frontend/src/lib",
+      "domain": "frontend",
+      "parents": [],
+      "children": []
+    },
+    "c5cf100b43ae8f7c": {
+      "canonical_id": "module:frontend/src/server",
+      "name": "frontend-server",
+      "type": "module",
+      "path": "frontend/src/server",
+      "domain": "frontend",
+      "parents": [],
+      "children": []
+    },
+    "af7f38242b7c0559": {
+      "canonical_id": "module:frontend/src/styles",
+      "name": "frontend-styles",
+      "type": "module",
+      "path": "frontend/src/styles",
+      "domain": "frontend",
+      "parents": [],
+      "children": []
+    },
+    "9d7cd6c6057a837d": {
+      "canonical_id": "module:frontend/src/typings",
+      "name": "frontend-typings",
+      "type": "module",
+      "path": "frontend/src/typings",
+      "domain": "frontend",
+      "parents": [],
+      "children": []
+    },
+    "cbd9bddb2603703d": {
+      "canonical_id": "module:skills/custom",
+      "name": "skills-custom",
+      "type": "module",
+      "path": "skills/custom",
+      "domain": "skills",
+      "parents": [
+        "5894741b612dae26"
+      ],
+      "children": []
+    },
+    "58a82db38a1082b2": {
+      "canonical_id": "module:skills/public",
+      "name": "skills-public",
+      "type": "module",
+      "path": "skills/public",
+      "domain": "skills",
+      "parents": [
+        "5894741b612dae26"
+      ],
+      "children": []
+    },
+    "1a7ef8e766f185a2": {
+      "canonical_id": "scheduler:memory-update-queue",
+      "name": "memory-update-queue",
+      "type": "scheduler",
+      "path": "backend/src/agents/memory/queue.py",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "7ebfd43cccc67cf5"
+      ]
+    },
+    "d7049720d2531d96": {
+      "canonical_id": "scheduler:subagent-executor",
+      "name": "subagent-executor",
+      "type": "scheduler",
+      "path": "backend/src/subagents/executor.py",
+      "domain": "backend",
+      "parents": [
+        "d38bc66c683d3b7a"
+      ],
+      "children": [
+        "6ffb0e9886eebe40"
+      ]
+    },
+    "6ef339c43c3b32be": {
+      "canonical_id": "service:frontend",
+      "name": "frontend",
+      "type": "service",
+      "path": "frontend",
+      "domain": "frontend",
+      "parents": [
+        "b6817b8b43c0dced",
+        "d23ae50788845411",
+        "d533dfcdadc90669"
+      ],
+      "children": [
+        "34a717ac70d5ebc1",
+        "cd78a768fe713c6f",
+        "d15ae8d4a14922ba"
+      ]
+    },
+    "98ceb006215e09fe": {
+      "canonical_id": "service:gateway",
+      "name": "gateway",
+      "type": "service",
+      "path": "gateway",
+      "domain": "backend",
+      "parents": [
+        "004b67bb26c09ad5",
+        "270e242441b1a834",
+        "281862bedb91c209",
+        "3596b7d831c7eac0",
+        "3a9e46986bbaf5c1",
+        "555cec3f1c4599c7",
+        "73d861c3d5bddf33",
+        "81e9973d19c54346",
+        "8b64f8027f996b3b",
+        "940295218756d42f",
+        "b6817b8b43c0dced",
+        "c5daf628327d8abe",
+        "c7f595cf59e59a50",
+        "d23ae50788845411",
+        "d38bc66c683d3b7a",
+        "f22ca4b6499f7386",
+        "fec2e606e0dc2fdb"
+      ],
+      "children": [
+        "20cdcb391dd00901",
+        "3adecdefb9444aed",
+        "5894741b612dae26",
+        "72404a558745fd52",
+        "97ed0223ace4b7a8"
+      ]
+    },
+    "d38bc66c683d3b7a": {
+      "canonical_id": "service:langgraph",
+      "name": "langgraph",
+      "type": "service",
+      "path": "langgraph",
+      "domain": "backend",
+      "parents": [
+        "590e4e520343c8c7",
+        "b6817b8b43c0dced",
+        "d23ae50788845411"
+      ],
+      "children": [
+        "1a7ef8e766f185a2",
+        "257086f77783d424",
+        "2fd7b9dce5128c2d",
+        "6ffb0e9886eebe40",
+        "79b4876d58940a6c",
+        "7ebfd43cccc67cf5",
+        "98ceb006215e09fe",
+        "cd0f77195c2cf57f",
+        "d7049720d2531d96"
+      ]
+    },
+    "b6817b8b43c0dced": {
+      "canonical_id": "service:nginx",
+      "name": "nginx",
+      "type": "service",
+      "path": "nginx",
+      "domain": "infra",
+      "parents": [
+        "d23ae50788845411"
+      ],
+      "children": [
+        "6ef339c43c3b32be",
+        "98ceb006215e09fe",
+        "d38bc66c683d3b7a"
+      ]
+    },
+    "b3f1ef2553afe509": {
+      "canonical_id": "service:provisioner",
+      "name": "provisioner",
+      "type": "service",
+      "path": "provisioner",
+      "domain": "infra",
+      "parents": [
+        "d23ae50788845411"
+      ],
+      "children": [
+        "257086f77783d424"
+      ]
+    }
+  }
+}
